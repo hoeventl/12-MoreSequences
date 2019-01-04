@@ -398,7 +398,7 @@ def rectangles_from_circles(circles):
       :rtype: list of rg.Rectangles
     """
     # -------------------------------------------------------------------------
-    # TODO: 10. Implement and test this function.
+    # DONE: 10. Implement and test this function.
     #     The testing code is already written for you (above).
     #
     ###########################################################################
@@ -409,6 +409,11 @@ def rectangles_from_circles(circles):
     #            in this function, so DON'T draw anything in here!
     ###########################################################################
     # -------------------------------------------------------------------------
+    shopping = []
+    for circle in circles:
+        rect = circle.get_bounding_box()
+        shopping = shopping + [rect]
+    return shopping
 
 
 # -----------------------------------------------------------------------------
